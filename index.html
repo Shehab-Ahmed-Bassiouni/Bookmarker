@@ -1,0 +1,41 @@
+<!-- prettier-ignore -->
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+  </head>
+  <body>
+    <h1
+      class="w-75 p-5 m-auto  text-secondary border-bottom border-dark">Bookmarker</h1>
+    <div class="m-auto w-75">
+      <h4 class="text-center p-5 mt-4">Bookmark your favorite sites</h4>
+      <h6 class="text-center">Site Name</h6>
+      <input
+        type="text"
+        class="form-control w-75 m-auto"
+        placeholder="Bookmark Name"
+        id="Bname"
+      />
+      <div class="alert alert-danger w-75 mx-auto my-3 d-none" id="alerting" role="alert">
+            This Bookmark Already Exist
+         </div>
+      <h6 class="text-center mt-4">Site URL</h6>
+      <input
+        type="text"
+        class="form-control w-75 m-auto"
+        placeholder="Website URL"
+        id="Burl"
+      />
+      <button class="d-block btn btn-primary my-3 mx-auto" onclick="submit()">Submit</button>
+    </div>
+    <div id="main">
+    </div>
+    <p class="w-75 p-5 m-auto  text-secondary border-top border-dark">
+      © 2019 Bookmarker Inc.
+    </p>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/backend.js"></script>
+  </body>
+</html>
